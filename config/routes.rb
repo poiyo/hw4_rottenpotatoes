@@ -13,7 +13,7 @@ Rottenpotatoes::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :movies
-
+  match 'find_movies_by_director/:movie_id' => 'director#find_movies_by_director'
   # Sample resource route with options:
   #   resources :products do
   #     member do
